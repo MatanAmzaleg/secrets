@@ -27,7 +27,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb://localhost:27017/userDB");
+mongoose.connect("mongodb+srv://matanamz:0508666500@cluster0.nziof.mongodb.net/userDB");
 
 const userSchema = new mongoose.Schema ({
   email: String,
